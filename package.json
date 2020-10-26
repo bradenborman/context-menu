@@ -5,10 +5,14 @@
   "repository": "bradenborman/context-menu",
   "main": "index.js",
   "scripts": {
-    
+    "clean": "rimraf build/"
   },
   "keywords": ["context-menu"],
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "rimraf": "^2.6.2"
+  }
 }
