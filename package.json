@@ -1,0 +1,13 @@
+{
+  "name": "@bborman/context-menu",
+  "version": "0.0.1",
+  "description": "Custom Contect Menu",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
