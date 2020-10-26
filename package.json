@@ -2,11 +2,12 @@
   "name": "@bborman/context-menu",
   "version": "0.0.1",
   "description": "Custom Contect Menu",
+  "repository": "bradenborman/context-menu",
   "main": "index.js",
   "scripts": {
     
   },
-  "keywords": [],
+  "keywords": ["context-menu"],
   "author": "",
   "license": "ISC",
   "dependencies": {}
