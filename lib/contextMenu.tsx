@@ -2,7 +2,7 @@ import React = require("react");
 import { useState } from "react";
 import classNames from "classnames";
 
-require("./ContextMenu.css");
+require("./contextMenu.css");
 
 export interface IMenuProps {
   children: any;

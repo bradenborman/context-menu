@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MenuItem = void 0;
-const React = require("react");
-const classnames_1 = require("classnames");
-exports.MenuItem = props => {
+var React = require("react");
+var classnames_1 = require("classnames");
+exports.MenuItem = function(props) {
   return React.createElement(
     "li",
     {
@@ -22,4 +22,3 @@ exports.MenuItem = props => {
     )
   );
 };
-//# sourceMappingURL=menuItem.js.map

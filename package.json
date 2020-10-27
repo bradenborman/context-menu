@@ -6,12 +6,10 @@
     "type": "git",
     "url": "https://github.com/bradenborman/context-menu.git"
   },
-  "main": "lib/",
+  "main": "lib/index.ts",
   "typings": "lib/",
   "scripts": {
-    "clean": "rimraf build/",
-    "build": "npm run tsc",
-    "tsc": "tsc"
+    "build": "tsc && echo 'Finished building NPM package'"
   },
   "keywords": [
     "context-menu"

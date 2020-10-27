@@ -1,21 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ContextMenu = void 0;
-const React = require("react");
-const react_1 = require("react");
-const classnames_1 = require("classnames");
-require("./ContextMenu.css");
-exports.ContextMenu = props => {
-  const [showMenu, setShowMenu] = react_1.useState(false);
-  const [xAxis, setxAxis] = react_1.useState(0);
-  const [yAxis, setyAxis] = react_1.useState(0);
-  const onMouseDown = e => {
+var React = require("react");
+var react_1 = require("react");
+var classnames_1 = require("classnames");
+require("./contextMenu.css");
+exports.ContextMenu = function(props) {
+  var _a = react_1.useState(false),
+    showMenu = _a[0],
+    setShowMenu = _a[1];
+  var _b = react_1.useState(0),
+    xAxis = _b[0],
+    setxAxis = _b[1];
+  var _c = react_1.useState(0),
+    yAxis = _c[0],
+    setyAxis = _c[1];
+  var onMouseDown = function(e) {
     setShowMenu(false);
     document.removeEventListener("click", onMouseDown);
   };
   document.addEventListener(
     "contextmenu",
-    e => {
+    function(e) {
       if (clickInsideElement(e) || props.allowedClasses == null) {
         e.preventDefault();
         setxAxis(e.pageX);
@@ -26,19 +32,19 @@ exports.ContextMenu = props => {
     },
     false
   );
-  const clickInsideElement = e => {
+  var clickInsideElement = function(e) {
     var _a;
-    let isValid = false;
+    var isValid = false;
     (_a = props.allowedClasses) === null || _a === void 0
       ? void 0
-      : _a.forEach(element => {
+      : _a.forEach(function(element) {
           if (clickInsideElementY(e, element)) {
             isValid = true;
           }
         });
     return isValid;
   };
-  const clickInsideElementY = (e, className) => {
+  var clickInsideElementY = function(e, className) {
     var el = e.srcElement || e.target;
     if (el.classList.contains(className)) {
       return el;
@@ -60,4 +66,3 @@ exports.ContextMenu = props => {
     props.children
   );
 };
-//# sourceMappingURL=ContextMenu.js.map

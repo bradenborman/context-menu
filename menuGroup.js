@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MenuGroup = void 0;
-const React = require("react");
-exports.MenuGroup = props => {
+var React = require("react");
+exports.MenuGroup = function(props) {
   return React.createElement(
     "li",
     { className: "menu-item menu-item-submenu" },
@@ -19,4 +19,3 @@ exports.MenuGroup = props => {
     React.createElement("ul", { className: "menu" }, props.children)
   );
 };
-//# sourceMappingURL=menuGroup.js.map
