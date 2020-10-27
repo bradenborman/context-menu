@@ -6,8 +6,8 @@
     "type": "git",
     "url": "https://github.com/bradenborman/context-menu.git"
   },
-  "main": "lib/index.ts",
-  "typings": "lib/",
+  "main": "src/index.ts",
+  "typings": "src/",
   "scripts": {
     "build": "tsc && echo 'Finished building NPM package'"
   },
