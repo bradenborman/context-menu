@@ -6,9 +6,6 @@
     "type": "git",
     "url": "https://github.com/bradenborman/context-menu.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "lib/",
   "typings": "lib/",
   "scripts": {
