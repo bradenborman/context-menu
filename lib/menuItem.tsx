@@ -1,4 +1,4 @@
-import React = require("react");
+import React, { useState } from "react";
 import classNames from "classnames";
 
 export interface IMenuItemProps {
